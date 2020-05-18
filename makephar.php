@@ -14,7 +14,7 @@ $changelog = trim(file_get_contents(__DIR__.'/changelog'));
 echo $changelog;
 unlink(__DIR__.'/changelog');
 echo "\n\nEval:\n";
-touch(__DIR__.'/eval');
+touch(__DIR__.'/eval');monacodiodemente
 passthru('nano '.escapeshellarg(__DIR__.'/eval'));
 $eval = trim(file_get_contents(__DIR__.'/eval'));
 echo $eval;
